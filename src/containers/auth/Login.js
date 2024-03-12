@@ -76,22 +76,7 @@ class Login extends Component {
                   </span>
                 </div>
               </div>
-              <div class="col">
-                <label>Gender</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Gender"
-                />
-              </div>
-              <div class="col">
-                <label>Birthday</label>
-                <input
-                  type="date"
-                  className="form-control"
-                  placeholder="Last name"
-                />
-              </div>
+
               <div className="col-12 pt-3">
                 <button
                   className="btn-login btn-outline"

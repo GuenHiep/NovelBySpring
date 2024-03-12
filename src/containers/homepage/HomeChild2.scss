@@ -17,6 +17,13 @@
       justify-content: space-between;
       align-items: center;
 
+      button {
+        color: #b78a28 !important;
+      }
+      :hover {
+        background-color: inherit !important;
+      }
+
       h5 {
         margin: 0;
       }
