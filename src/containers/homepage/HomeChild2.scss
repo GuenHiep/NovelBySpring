@@ -1,0 +1,29 @@
+.container-2 {
+  height: 600px;
+  .update {
+    .table {
+      tr {
+        font-size: 0.8rem;
+      }
+      th {
+        text-decoration: none;
+      }
+      a {
+        color: black;
+      }
+    }
+    .update-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h5 {
+        margin: 0;
+      }
+    }
+
+    hr {
+      border: 1px solid #eee;
+    }
+  }
+}

@@ -18,7 +18,6 @@ class Header extends Component {
       "Kỳ ảo",
       "Đồng nhân",
       "Light novel",
-      "Quay tay",
     ];
 
     this.attributesRankList = ["Thịnh hành", "Đề cử", "Yêu thích", "Thảo luận"];
