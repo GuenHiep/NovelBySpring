@@ -32,12 +32,11 @@ class Header extends Component {
   };
 
   handleMouseLeaveAttributes = () => {
-    // Sử dụng setTimeout để trì hoãn việc ẩn thuộc tính
     this.timeoutId = setTimeout(() => {
       this.setState({
         isAttributesVisible: false,
       });
-    }, 200); // Đặt thời gian trễ tại đây (ví dụ: 200ms)
+    }, 200);
   };
 
   handleMouseEnterRank = () => {
@@ -48,15 +47,13 @@ class Header extends Component {
   };
 
   handleMouseLeaveRank = () => {
-    // Sử dụng setTimeout để trì hoãn việc ẩn thuộc tính
     this.timeoutId = setTimeout(() => {
       this.setState({
         isAttributesRankVisible: false,
       });
-    }, 200); // Đặt thời gian trễ tại đây (ví dụ: 200ms)
+    }, 200);
   };
 
-  // Hủy bỏ việc ẩn thuộc tính nếu chuột quay lại nhanh chóng
   handleMouseEnterAttributesList = () => {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
@@ -141,7 +138,6 @@ class Header extends Component {
                   </div>
                 )}
               </div>
-
               <div
                 className="col-2 rank text-left"
                 onMouseEnter={this.handleMouseEnterRank}
@@ -169,10 +165,10 @@ class Header extends Component {
                 <div>Đăng truyện</div>
               </div>
               <div className="col-2 Login text-center">
-                <div>
+                <a href="/login">
                   Đăng nhập
                   <i class="fas fa-user pl-2"></i>
-                </div>
+                </a>
               </div>
             </div>
           </div>
