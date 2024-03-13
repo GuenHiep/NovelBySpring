@@ -1,0 +1,137 @@
+.containerfluid-4 {
+  height: 1100px;
+  background-repeat: no-repeat;
+
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #b78a28;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    font-weight: 350;
+  }
+
+  .container-1 {
+    .content {
+      hr {
+        border: 1px solid #eee;
+      }
+      padding-top: 5%;
+      .nominations {
+        background-color: white;
+        border-radius: 0.5rem 0 0 0.5rem;
+        .title {
+          height: 5%;
+        }
+
+        button {
+          padding: 3px 6px;
+          font-size: small;
+          color: #b78a28 !important;
+          border-color: #b78a28;
+        }
+        :hover {
+          background-color: inherit !important;
+        }
+        .card {
+          border: 0;
+          border-radius: 0;
+
+          .no-gutters {
+            height: 170px;
+            width: 333px;
+
+            .img-component {
+              width: 85%;
+              height: 70%;
+              position: relative;
+              top: 12%;
+              left: 15%;
+            }
+
+            .text-component {
+              font-size: 0.9rem;
+              text-decoration: none;
+            }
+
+            p {
+              font-size: 0.8rem;
+              border: none;
+            }
+
+            .button-card {
+              font-size: xx-small;
+              float: right;
+              padding: 3px 6px;
+              color: #b78a28 !important;
+              border-color: #b78a28;
+            }
+            :hover {
+              background-color: inherit !important;
+            }
+          }
+        }
+      }
+
+      .reading {
+        background-color: white;
+        border-radius: 0 0.5rem 0.5rem 0;
+
+        .title-reading {
+          height: 5%;
+          button {
+            padding: 3px 6px;
+            font-size: small;
+            color: #b78a28 !important;
+            border-color: #b78a28;
+          }
+          :hover {
+            background-color: inherit !important;
+          }
+        }
+        .reading-child {
+          height: 50%;
+          .img-reading {
+            width: 35px;
+          }
+
+          .text-reading {
+            font-size: 0.9rem;
+            text-decoration: none;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+
+        .instruct {
+          height: 44%;
+
+          ul {
+            margin-top: 5%;
+            li {
+              font-size: 0.9rem;
+              padding: 3%;
+            }
+          }
+
+          .title-instruct {
+            height: 12%;
+            button {
+              padding: 3px 6px;
+              font-size: small;
+              color: #b78a28 !important;
+              border-color: #b78a28;
+            }
+            :hover {
+              background-color: inherit !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
