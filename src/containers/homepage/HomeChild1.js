@@ -22,7 +22,7 @@ class HomeChild1 extends Component {
 
   renderCard = (index) => {
     const sampleText = "Bắt Đầu Hỗn Độn Kiếm Thể, Chế Tạo Bất Hủ Tiên Tộc"; // đổ api vào đây
-    const truncatedText = this.truncateText(sampleText, 22);
+    const truncatedText = this.truncateText(sampleText, 21);
     const img = require("../../assets/images/1.jpg");
 
     const sampleTextChild = `Cố Trường Thanh xuyên qua huyền huyễn thế giới, thức
@@ -52,7 +52,7 @@ class HomeChild1 extends Component {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <a href="#/" className="text-component ">
+                <a href="#/" className="text-component font-weight-bold">
                   {truncatedText}
                 </a>
                 <p className="card-text">{truncatedTextChild}</p>

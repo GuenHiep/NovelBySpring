@@ -1,0 +1,663 @@
+.container-3 {
+  a {
+    color: black;
+    font-weight: 500;
+  }
+  a:hover {
+    color: #b78a28;
+    transition: color 0.3s ease;
+  }
+
+  span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666 !important;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .col-4 {
+      flex: 1;
+    }
+    .content-1 {
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      .content-medal1 {
+        padding-right: 0;
+
+        .medal1 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .imgbxh {
+          display: flex;
+          align-items: start;
+          justify-content: flex-end;
+          img {
+            max-width: 85%;
+            height: auto;
+          }
+        }
+
+        .content-bxh {
+          .title-top {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal2 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal3 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal4 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal5 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal6 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal7 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal8 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal9 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal10 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+    }
+    .content-2 {
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      .content-medal1 {
+        padding-right: 0;
+
+        .medal1 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .imgbxh {
+          display: flex;
+          align-items: start;
+          justify-content: flex-end;
+          img {
+            max-width: 85%;
+            height: auto;
+          }
+        }
+
+        .content-bxh {
+          .title-top {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal2 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal3 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal4 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal5 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal6 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal7 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal8 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal9 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal10 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+    }
+    .content-3 {
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      .content-medal1 {
+        padding-right: 0;
+
+        .medal1 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .imgbxh {
+          display: flex;
+          align-items: start;
+          justify-content: flex-end;
+          img {
+            max-width: 85%;
+            height: auto;
+          }
+        }
+
+        .content-bxh {
+          .title-top {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal2 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal3 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal4 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal5 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal6 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal7 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal8 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal9 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+      .content-medal10 {
+        .medal2 {
+          height: 2rem;
+          width: 1.5rem;
+        }
+        .content-bxh {
+          .title-bxh {
+            font-size: 0.8rem;
+            text-decoration: none;
+          }
+          hr {
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+          }
+
+          .view-bxh {
+            color: #b78a28;
+          }
+        }
+      }
+    }
+  }
+}

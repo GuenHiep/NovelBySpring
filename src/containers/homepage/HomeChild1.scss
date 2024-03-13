@@ -3,6 +3,18 @@
   height: 1100px;
   background-repeat: no-repeat;
 
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #b78a28;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    font-weight: 350;
+  }
+
   .container-1 {
     .content {
       hr {
