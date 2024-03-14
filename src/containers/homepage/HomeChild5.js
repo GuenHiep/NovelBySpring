@@ -1,17 +1,10 @@
 import React, { Component } from "react";
+import img from "../../assets/images/1.jpg";
 
-import "./HomeChild4.scss";
+import "./HomeChild5.scss";
 
-class HomeChild4 extends Component {
+class HomeChild5 extends Component {
   truncateText = (text, limit) => {
-    if (text.length <= limit) {
-      return text;
-    } else {
-      return text.slice(0, limit) + "...";
-    }
-  };
-
-  truncatedTextChild = (text, limit) => {
     if (text.length <= limit) {
       return text;
     } else {
@@ -40,10 +33,10 @@ class HomeChild4 extends Component {
     chuyện gì xảy ra? Tùy tiện một cái gia bộc đều là
     Đại Đế! Ra tới một cái ba tuổi tiểu hài tử, làm sao
     lại có Hồng Trần Tiên thực lực! ?"`; // đổ api vào đây
-    const truncatedTextChild = this.truncateText(sampleTextChild, 52);
+    const truncatedTextChild = this.truncateText(sampleTextChild, 85);
 
     return (
-      <div key={index} className="col-4">
+      <div key={index} className="col-6">
         <div className="card">
           <div className="row no-gutters">
             <div className="col-md-4">
@@ -55,7 +48,6 @@ class HomeChild4 extends Component {
                   {truncatedText}
                 </a>
                 <p className="card-text">{truncatedTextChild}</p>
-
                 <div className="list-inline">
                   <p className="card-text list-inline-item">
                     <small className="text-muted">
@@ -69,17 +61,6 @@ class HomeChild4 extends Component {
                     Huyền Huyễn
                   </button>
                 </div>
-                <div className="list-inline">
-                  <p className="card-text list-inline-item">
-                    <small className="text-success">3 đánh giá</small>
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-danger list-inline-item button-card1"
-                  >
-                    5.00
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -90,7 +71,7 @@ class HomeChild4 extends Component {
   };
 
   renderCards = () => {
-    const numberOfCards = 9;
+    const numberOfCards = 6;
 
     const cards = [];
     for (let i = 0; i < numberOfCards; i++) {
@@ -103,12 +84,18 @@ class HomeChild4 extends Component {
   render() {
     return (
       <>
-        <div className="containerfluid-4 container-fluid">
-          <div className="container-4 container">
+        <div className="containerfluid-5 container-fluid">
+          <div className="container-5 container">
             <div className="row content">
-              <div className="col-12 row no-gutters nominations">
+              <div className="col-4 row new-post">
+                <div className="col-12 title-post d-flex pt-3">
+                  <h5>Mới đăng</h5>
+                </div>
+                <div className=""></div>
+              </div>
+              <div className="col-8 row no-gutters complete">
                 <div className="col-12 title d-flex pt-3">
-                  <h5>Đánh giá cao</h5>
+                  <h5>Mới hoàn thành</h5>
                   <button
                     type="button"
                     class="btn btn-outline-warning border-0 ml-auto"
@@ -126,4 +113,4 @@ class HomeChild4 extends Component {
   }
 }
 
-export default HomeChild4;
+export default HomeChild5;

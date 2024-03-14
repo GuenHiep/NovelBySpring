@@ -1,6 +1,5 @@
-.containerfluid-4 {
-  height: 750px;
-  background-repeat: no-repeat;
+.containerfluid-5 {
+  height: 1100px;
 
   a {
     color: black;
@@ -14,17 +13,16 @@
     font-weight: 350;
   }
 
-  .container-4 {
+  .container-5 {
     .content {
       hr {
         border: 1px solid #eee;
       }
-      padding-top: 5%;
-      .nominations {
+      .complete {
         background-color: white;
         border-radius: 0.5rem 0 0 0.5rem;
         .title {
-          height: 8%;
+          height: 5%;
         }
 
         button {
@@ -72,14 +70,16 @@
             :hover {
               background-color: inherit !important;
             }
-            .button-card1 {
-              font-size: xx-small;
-              float: right;
-              padding: 3px 6px;
-              color: #bf2c24 !important;
-              border-color: #bf2c24;
-            }
           }
+        }
+      }
+
+      .new-post {
+        background-color: #f7f5f0;
+        padding: 20px;
+        border-radius: 10px;
+        .title-post {
+          height: 5%;
         }
       }
     }
