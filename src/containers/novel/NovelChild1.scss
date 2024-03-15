@@ -1,0 +1,51 @@
+.container-main {
+  background: url(../../assets/images/background.webp);
+  background-repeat: no-repeat;
+  height: 600px;
+
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #b78a28;
+    transition: color 0.3s ease;
+  }
+
+  .container-novel {
+    padding-top: 13%;
+    .novel-content {
+      background-color: white;
+      border-radius: 10px;
+
+      .img {
+        width: 260px;
+        .img-novel {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .body {
+        .text-tilte {
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+        .list-unstyled {
+          li {
+            font-size: 0.9em !important;
+          }
+          .font {
+            font-size: 1rem;
+          }
+          .button-1 {
+            background-color: #b78a28;
+            border-color: #b78a28;
+          }
+          .button-2 {
+            background-color: #6c757d;
+            border-color: #6c757d;
+          }
+        }
+      }
+    }
+  }
+}

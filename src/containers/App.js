@@ -6,6 +6,7 @@ import axios from "../axios";
 import HomePage from "./homepage/HomePage";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
+import NovelPage from "./novel/NovelPage";
 
 function App() {
   const [, setUserData] = useState([{}]);
@@ -35,6 +36,10 @@ function App() {
           <Routes>
             <Route path="/register" element={<Register />} />
           </Routes>
+          <Routes>
+            <Route path="/novel" element={<NovelPage />} />
+          </Routes>
+          <div style={{ height: "300px" }}></div>
         </header>
       </div>
     </BrowserRouter>

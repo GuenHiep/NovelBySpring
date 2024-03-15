@@ -1,0 +1,31 @@
+.container-novel2 {
+  .body-option {
+    .content {
+      .text-introduce {
+        font-size: 0.9rem;
+      }
+
+      .introduce {
+        .table {
+          .svg-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+          }
+        }
+      }
+      .rating {
+        background-color: #f8f9fa;
+      }
+    }
+
+    .author-novel {
+      background-color: #f7f5f0;
+      border-radius: 10px;
+      // height: 1000px;
+
+      .avatar {
+        height: 200px;
+      }
+    }
+  }
+}
