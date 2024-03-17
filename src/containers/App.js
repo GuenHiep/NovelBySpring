@@ -7,6 +7,7 @@ import HomePage from "./homepage/HomePage";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import NovelPage from "./novel/NovelPage";
+import Test from "./filter/Test";
 
 function App() {
   const [, setUserData] = useState([{}]);
@@ -38,6 +39,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/novel" element={<NovelPage />} />
+          </Routes>
+          <Routes>
+            <Route path="/test" element={<Test />} />
           </Routes>
           <div style={{ height: "300px" }}></div>
         </header>

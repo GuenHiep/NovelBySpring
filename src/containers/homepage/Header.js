@@ -6,55 +6,43 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAttributesVisible: false,
-      isAttributesRankVisible: false,
+      isOpenGenre: false,
+      isOpenRank: false,
     };
-    this.attributesList = [
-      "Tất cả",
-      "Kiếm hiệp",
-      "Tiên hiệp",
-      "Huyền bí",
-      "Đô thị",
-      "Kỳ ảo",
-      "Đồng nhân",
-      "Light novel",
-    ];
-
-    this.attributesRankList = ["Thịnh hành", "Đề cử", "Yêu thích", "Thảo luận"];
     this.timeoutId = null;
   }
 
-  handleMouseEnterAttributes = () => {
+  handleMouseEnterGenre = () => {
     this.setState({
-      isAttributesVisible: true,
-      isAttributesRankVisible: false,
+      isOpenGenre: true,
+      isOpenRank: false,
     });
   };
 
-  handleMouseLeaveAttributes = () => {
+  handleMouseLeaveGenre = () => {
     this.timeoutId = setTimeout(() => {
       this.setState({
-        isAttributesVisible: false,
+        isOpenGenre: false,
       });
     }, 200);
   };
 
   handleMouseEnterRank = () => {
     this.setState({
-      isAttributesRankVisible: true,
-      isAttributesVisible: false,
+      isOpenRank: true,
+      isOpenGenre: false,
     });
   };
 
   handleMouseLeaveRank = () => {
     this.timeoutId = setTimeout(() => {
       this.setState({
-        isAttributesRankVisible: false,
+        isOpenRank: false,
       });
     }, 200);
   };
 
-  handleMouseEnterAttributesList = () => {
+  handleMouseEnterList = () => {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
       this.timeoutId = null;
@@ -65,94 +53,171 @@ class Header extends Component {
     console.log(`Selected attribute: ${attribute}`);
   };
 
-  handleMouseEnterRankList = () => {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-      this.timeoutId = null;
-    }
+  toggleDropdownGenre = () => {
+    this.setState((prevState) => ({
+      isOpenGenre: !prevState.isOpenGenre,
+    }));
   };
 
-  handleAttributeRankClick = (attribute) => {
-    console.log(`Selected rank attribute: ${attribute}`);
+  toggleDropdownRank = () => {
+    this.setState((prevState) => ({
+      isOpenRank: !prevState.isOpenRank,
+    }));
   };
 
-  renderAttributesList = () => {
-    return (
-      <div
-        className="attributes-container"
-        onMouseEnter={this.handleMouseEnterAttributesList}
-      >
-        {this.attributesList.map((attribute, index) => (
-          <div key={index} onClick={() => this.handleAttributeClick(attribute)}>
-            {attribute}
-          </div>
-        ))}
-      </div>
-    );
-  };
-
-  renderAttributesRankList = () => {
-    return (
-      <div
-        className="attributes-container"
-        onMouseEnter={this.handleMouseEnterRankList}
-      >
-        {this.attributesRankList.map((attribute, index) => (
-          <div
-            key={index}
-            onClick={() => this.handleAttributeRankClick(attribute)}
-          >
-            {attribute}
-          </div>
-        ))}
-      </div>
-    );
+  handleItemClick = (item) => {
+    console.log(`Clicked ${item}`);
   };
 
   render() {
+    const { isOpenGenre, isOpenRank } = this.state;
+
     return (
       <>
-        <div className="header-container container-fluid">
-          <div className="container">
-            <div className="row row align-items-center">
+        <div className="container-fluid header-container">
+          <div className="container navbar">
+            <div className="col-12 row align-items-center">
               <div className="col-1 logo">
-                <img src={logo} className="logo" alt="logo"></img>
+                <img
+                  src={logo}
+                  alt=""
+                  style={{ height: "50px", width: "50px" }}
+                  className="rounded-pill"
+                ></img>
               </div>
               <div
-                className="col-2 genre text-center"
-                onMouseEnter={this.handleMouseEnterAttributes}
-                onMouseLeave={this.handleMouseLeaveAttributes}
+                className="col-2 genre"
+                onMouseEnter={this.handleMouseEnterGenre}
+                onMouseLeave={this.handleMouseLeaveGenre}
               >
                 <button
+                  id="dropdownDefaultButton"
+                  onClick={this.toggleDropdownGenre}
                   type="button"
                   className="btn btn-light font-weight-bold text-smaller text-center"
                 >
                   <i className="fas fa-bars pr-2"></i>
                   Thể loại
                 </button>
-                {this.state.isAttributesVisible && (
-                  <div className="custom-card text-left">
-                    <div className="card-body">
-                      {this.renderAttributesList()}
+                {isOpenGenre && (
+                  <div
+                    id="dropdown"
+                    className=" mt-1 bg-white rounded-lg shadow pl-3"
+                    style={{
+                      position: "absolute",
+                      top: "100%",
+                      width: "250px",
+                    }}
+                  >
+                    <div
+                      className="py-2 text-sm "
+                      style={{ display: "flex", width: "100%" }}
+                    >
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Dashboard")}
+                        className="text-dark custom-link"
+                        style={{ flex: 1 }}
+                      >
+                        Tất cả
+                      </a>
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Settings")}
+                        className="text-dark"
+                        style={{ flex: 1 }}
+                      >
+                        Kiếm hiệp
+                      </a>
+                    </div>
+                    <div
+                      className="py-2 text-sm "
+                      style={{ display: "flex", width: "100%" }}
+                    >
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Earnings")}
+                        className="text-dark"
+                        style={{ flex: 1 }}
+                      >
+                        Tiên hiệp
+                      </a>
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Sign out")}
+                        className="text-dark"
+                        style={{ flex: 1 }}
+                      >
+                        Huyền bí
+                      </a>
                     </div>
                   </div>
                 )}
               </div>
               <div
-                className="col-2 rank text-left"
+                className="col-2 rank"
                 onMouseEnter={this.handleMouseEnterRank}
                 onMouseLeave={this.handleMouseLeaveRank}
               >
                 <button
+                  id="dropdownDefaultButton"
+                  onClick={this.toggleDropdownRank}
                   type="button"
-                  className="btn btn-light font-weight-bold text-smaller"
+                  className="btn btn-light font-weight-bold text-smaller text-center"
                 >
                   Bảng xếp hạng
                 </button>
-                {this.state.isAttributesRankVisible && (
-                  <div className="custom-card-rank">
-                    <div className="card-body card-rank">
-                      {this.renderAttributesRankList()}
+                {isOpenRank && (
+                  <div
+                    id="dropdown"
+                    className=" mt-1 bg-white rounded-lg shadow pl-3"
+                    style={{
+                      position: "absolute",
+                      top: "100%",
+                      width: "250px",
+                    }}
+                  >
+                    <div
+                      className="py-2 text-sm "
+                      style={{ display: "flex", width: "100%" }}
+                    >
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Dashboard")}
+                        className="text-dark custom-link"
+                        style={{ flex: 1 }}
+                      >
+                        Thịnh hành
+                      </a>
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Settings")}
+                        className="text-dark"
+                        style={{ flex: 1 }}
+                      >
+                        Đề cử
+                      </a>
+                    </div>
+                    <div
+                      className="py-2 text-sm "
+                      style={{ display: "flex", width: "100%" }}
+                    >
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Earnings")}
+                        className="text-dark"
+                        style={{ flex: 1 }}
+                      >
+                        Yêu thích
+                      </a>
+                      <a
+                        href="#/"
+                        onClick={() => this.handleItemClick("Sign out")}
+                        className="text-dark"
+                        style={{ flex: 1 }}
+                      >
+                        Thảo luận
+                      </a>
                     </div>
                   </div>
                 )}
