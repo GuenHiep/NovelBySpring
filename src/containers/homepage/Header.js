@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Header.scss";
 import logo from "../../assets/images/logo.jpg";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -230,9 +231,11 @@ class Header extends Component {
                 <div>Đăng truyện</div>
               </div>
               <div className="col-2 Login text-center">
-                <a href="/login">
-                  Đăng nhập
-                  <i class="fas fa-user pl-2"></i>
+                <a>
+                  <Link to="/login">
+                    Đăng nhập
+                    <i class="fas fa-user pl-2"></i>
+                  </Link>
                 </a>
               </div>
             </div>
