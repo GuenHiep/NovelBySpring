@@ -1,10 +1,6 @@
 .container-novel2 {
   .body-option {
     .content {
-      .text-introduce {
-        font-size: 0.9rem;
-      }
-
       .introduce {
         .table {
           .svg-icon {
@@ -12,12 +8,81 @@
             height: 1.75rem;
           }
         }
+        .text-introduce {
+          font-size: 0.9rem;
+        }
       }
       .rating {
         background-color: #f8f9fa;
+        border-radius: 10px;
+
+        .cmt {
+          padding: 0;
+          padding-top: 1rem;
+          .box-rating {
+            width: fit-content;
+            border-radius: 10px;
+            background: white;
+          }
+        }
+        textarea {
+          border: none;
+          outline: none;
+          background: transparent;
+          background-color: white;
+          border-radius: 10px;
+          height: 60px;
+          width: 100%;
+          padding-left: 1rem;
+          padding-top: 0.75rem;
+          padding-right: 15%;
+        }
+
+        i {
+          position: relative;
+          float: right;
+          right: 25px;
+          bottom: 30%;
+        }
+      }
+      .chapter {
+        p {
+          font-size: 0.9rem;
+        }
+        .border-bottom-dashed {
+          border-bottom: 0.5px dashed #eee;
+        }
+      }
+      .comment {
+        .avt-reader {
+          padding-left: 4%;
+        }
+        .box-cmt {
+          width: fit-content;
+          border-radius: 10px;
+          background: white;
+        }
+        textarea {
+          border: none;
+          outline: none;
+          background: transparent;
+          background-color: #eee;
+          border-radius: 10px;
+          height: 60px;
+          width: 100%;
+          padding-left: 1rem;
+          padding-top: 0.75rem;
+          padding-right: 15%;
+        }
+
+        i {
+          position: relative;
+          float: right;
+          right: 20px;
+          bottom: 50%;
+        }
       }
     }
-
     .author-novel {
       background-color: #f7f5f0;
       border-radius: 10px;

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./NovelChild2.scss";
 import Section from "./Section";
+import RangeSlider from "./RangeSlider";
 
 import hearth from "../../assets/images/hearth.png";
 import like from "../../assets/images/like.svg";
@@ -8,6 +9,7 @@ import haha from "../../assets/images/haha.png";
 import sad from "../../assets/images/sad.png";
 import angry from "../../assets/images/angry.svg";
 import avatar from "../../assets/images/avatar.webp";
+import reader from "../../assets/images/user.webp";
 
 class NovelChild2 extends Component {
   constructor(props) {
@@ -26,7 +28,7 @@ class NovelChild2 extends Component {
   renderIntroduce = () => {
     return (
       <div className="introduce">
-        <p className="text-introducep p-2 pt-4">
+        <p className="text-introduce p-2 pt-4">
           Là Đan Đế trọng sinh? Là dung hợp linh hồn? Bị đánh cắp linh căn, linh
           huyết, linh cốt ba không thiếu niên — — Long Trần, nương tựa theo
           trong trí nhớ luyện đan thần thuật, tu hành thần bí công pháp Cửu Tinh
@@ -132,63 +134,107 @@ class NovelChild2 extends Component {
 
   renderRating = () => {
     return (
-      <div className="rating p-2 container">
-        <div className="row  row-1">
-          <div className="text-rating col-4 font-weight-bold">
-            Tính cách nhân vật
+      <>
+        <div className="rating p-2 container mt-4">
+          <div className="row row-1 p-2">
+            <div className="text-rating col-4 font-weight-bold">
+              Tính cách nhân vật
+            </div>
+            <div className="range-rating col-8 no-gutters">
+              <RangeSlider />
+            </div>
           </div>
-          <div className="range-rating col-8 no-gutters">
-            <input
-              type="range"
-              min={1}
-              value={1}
-              max={5}
-              step={0.5}
-              className="col-12"
-            ></input>
+          <div className="row row-2 p-2">
+            <div className="text-rating col-4 font-weight-bold">
+              Nội dung cốt truyện
+            </div>
+            <div className="range-rating col-8 no-gutters">
+              <RangeSlider />
+            </div>
           </div>
-        </div>
-        <div className="row  row-2">
-          <div className="text-rating col-4 font-weight-bold">
-            Nội dung cốt truyện
+          <div className="row row-3 p-2">
+            <div className="text-rating col-4 font-weight-bold">
+              Bố cục thế giới
+            </div>
+            <div className="range-rating col-8 no-gutters">
+              <RangeSlider />
+            </div>
           </div>
-          <div className="range-rating col-8 no-gutters">
-            <input
-              type="range"
-              min={1}
-              value={1}
-              max={5}
-              step={0.5}
-              className="col-12"
-            ></input>
-          </div>
-        </div>
-        <div className="row  row-3">
-          <div className="text-rating col-4 font-weight-bold">
-            Bố cục thế giới
-          </div>
-          <div className="range-rating col-8 no-gutters">
-            <input
-              type="range"
-              min={1}
-              value={1}
-              max={5}
-              step={0.5}
-              className="col-12"
-            ></input>
+          <div className="col-12 row no-gutters cmt">
+            <div className="box-rating  rating-input col-12">
+              <textarea
+                placeholder="Đánh giá của bạn về truyện này..."
+                className=""
+              />
+              <i class="fas fa-paper-plane btn btn-secondary rounded-pill"></i>
+            </div>
           </div>
         </div>
-      </div>
+        <div className="comment d-flex justify-content-end pt-4">
+          <select class="custom-select w-auto ml-auto">
+            <option value="like_count">Lượt thích</option>{" "}
+            <option value="id">Mới nhất</option>
+          </select>
+        </div>
+        <hr></hr>
+        {/* cmt */}
+      </>
     );
   };
   renderChapter = () => {
-    return <div>chapter</div>;
+    const chapters = [
+      "Chương 1: Tỉnh lại thấy chi nữ ma đầu",
+      "Chương 2: Second chapter content",
+    ];
+    return (
+      <>
+        <div className="container chapter p-2 mt-4">
+          <div className="title-chapter">
+            <h5>Danh sách chương</h5>
+          </div>
+          <div className="body-chapter row no-gutters">
+            <div className="col-12 content-chapter row">
+              {chapters.map((chapter, index) => (
+                <div key={index} className="col-6 border-bottom-dashed">
+                  <p>{chapter}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </>
+    );
   };
   renderComment = () => {
-    return <div>cmt</div>;
-  };
-  renderFan = () => {
-    return <div>fan</div>;
+    return (
+      <>
+        <div className="d-flex col-12 pt-4">
+          <div className="value-cmt d-flex justify-content-start align-items-center col-6">
+            100 Bình luận
+          </div>
+          <div className="filter d-flex justify-content-end col-6">
+            <select class="custom-select w-auto ml-auto">
+              <option value="like_count">Mới nhất</option>{" "}
+              <option value="id">Cũ nhất</option>
+              <option value="id">Lượt thích</option>
+            </select>
+          </div>
+        </div>
+        <hr></hr>
+        <div className="col-12 row no-gutters comment pt-3">
+          <div className="avt-reader col-2">
+            <img alt="" src={reader} className="rounded-pill "></img>
+          </div>
+          <div className="col-10 row cmt-reader">
+            <div className="box-cmt col-12">
+              <textarea placeholder="Bình luận của bạn..."></textarea>
+              <i class="fas fa-paper-plane btn btn-secondary rounded-pill"></i>
+            </div>
+          </div>
+        </div>
+        <hr></hr>
+      </>
+    );
   };
 
   renderContent = () => {
@@ -202,8 +248,7 @@ class NovelChild2 extends Component {
         return this.renderChapter();
       case "Bình luận":
         return this.renderComment();
-      case "Hâm mộ":
-        return this.renderFan();
+
       default:
         return null;
     }
@@ -250,14 +295,6 @@ class NovelChild2 extends Component {
                 onClick={() => this.handleButtonClick("Bình luận")}
               >
                 Bình luận
-              </button>
-              <button
-                type="button"
-                className={`btn btn-outline-secondary rounded-pill
-                    ${this.state.activeButton === "Hâm mộ" ? "active" : ""}`}
-                onClick={() => this.handleButtonClick("Hâm mộ")}
-              >
-                Hâm mộ
               </button>
             </div>
           </div>
