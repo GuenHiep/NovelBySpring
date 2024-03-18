@@ -103,7 +103,7 @@ class Header extends Component {
                 {isOpenGenre && (
                   <div
                     id="dropdown"
-                    className=" mt-1 bg-white rounded-lg shadow pl-3"
+                    className=" mt-1 bg-white rounded-lg shadow pl-3 "
                     style={{
                       position: "absolute",
                       top: "100%",
@@ -111,7 +111,7 @@ class Header extends Component {
                     }}
                   >
                     <div
-                      className="py-2 text-sm "
+                      className="py-2 text-sm genre-component"
                       style={{ display: "flex", width: "100%" }}
                     >
                       <a

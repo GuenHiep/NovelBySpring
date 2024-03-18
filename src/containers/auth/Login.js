@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Login.scss";
+import { Link, useHistory } from "react-router-dom";
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -29,12 +30,8 @@ class Login extends Component {
     });
   };
 
-  handleRegister = () => {
-    this.props.history.push("/Register");
-  };
-
   handleLogin = () => {
-    alert("aloha");
+    this.props.history.push("/");
   };
 
   render() {
@@ -99,7 +96,9 @@ class Login extends Component {
                 <span className="no-accountp-1">
                   No account?
                   <div className="Register p-1">
-                    <a href="/Register">Register</a>
+                    <a>
+                      <Link to="/register">Register</Link>
+                    </a>
                   </div>
                 </span>
               </div>
