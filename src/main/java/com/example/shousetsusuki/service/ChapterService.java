@@ -27,7 +27,7 @@ public class ChapterService {
 
     public Chapter updateChapter(Chapter chapter, Long id){
         if (chaptersRepository.existsById(id)){
-            chapter.setChapterId(id);
+            chapter.setId(id);
             chaptersRepository.save(chapter);
         }
         return null;

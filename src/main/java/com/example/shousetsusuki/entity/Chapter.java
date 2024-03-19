@@ -3,23 +3,28 @@ package com.example.shousetsusuki.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Chapter")
+@Table(name = "chapter")
 public class Chapter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long chapterId;
+    private long id;
 
-    @ManyToOne
-    @JoinColumn(name = "novel_id",nullable = false)
-    private Novel novel;
-
-    @Column(name = "name",nullable = false,unique = true)
+    @NonNull
+    @Column(name = "name",unique = true)
     private String name;
 
-    @Column(name = "content",nullable = false)
+    @NonNull
+    @Column(name = "content")
     private String content;
+
+    @ManyToOne
+    @JoinColumn(name = "novel_id", referencedColumnName = "id")
+    private Novel novel;
+
 }
