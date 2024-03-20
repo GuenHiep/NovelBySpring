@@ -48,5 +48,4 @@ public class Novel {
 
     @OneToMany(mappedBy = "novel", cascade = CascadeType.ALL)
     private List<Chapter> chapters = new ArrayList<>();
-
 }
