@@ -16,15 +16,17 @@ public class Chapter {
     private long id;
 
     @NonNull
-    @Column(name = "name",unique = true)
+    @Column(name = "name", unique = true)
     private String name;
 
     @NonNull
     @Column(name = "content")
     private String content;
 
-    @ManyToOne
-    @JoinColumn(name = "novel_id", referencedColumnName = "id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "novel_id") // Tên cột tham chiếu đến novel_id trong bảng chapter
     private Novel novel;
+
+
 
 }

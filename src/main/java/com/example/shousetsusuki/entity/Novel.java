@@ -17,27 +17,36 @@ public class Novel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "title", nullable = false, unique = true)
+
+    @NonNull
+    @Column(name = "title", unique = true)
     private String title;
 
-    @Column(name = "author", nullable = false)
+    @NonNull
+    @Column(name = "author")
     private String author;
 
-    @Column(name = "genre", nullable = false)
+    @NonNull
+    @Column(name = "genre")
     private String genre;
 
-    @Column(name = "chapter", nullable = false)
+    @NonNull
+    @Column(name = "chapter")
     private String chapter;
+
 
     @Column(name = "views")
     private int views;
 
+
     @Column(name = "likes")
     private int likes;
 
-    @Column(name = "status", nullable = false)
+    @NonNull
+    @Column(name = "status")
     private String status;
 
     @OneToMany(mappedBy = "novel", cascade = CascadeType.ALL)
     private List<Chapter> chapters = new ArrayList<>();
+
 }
